@@ -5,29 +5,20 @@
         <v-list-item-icon>
           <v-icon>mdi-home</v-icon>
         </v-list-item-icon>
-        <v-list-item-content>
-          <v-list-item-title>首页</v-list-item-title>
-        </v-list-item-content>
+
+        <v-list-item-title>首页</v-list-item-title>
       </v-list-item>
     </v-list-item-group>
 
     <v-list-group prepend-icon="mdi-account-circle" no-action>
       <template v-slot:activator>
-        <v-list-item-title>
-          <v-list-item-content>
-            <v-list-item-title>分组1</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item-title>
+        <v-list-item-title>组件</v-list-item-title>
       </template>
-      <v-list-item to="About">
-        <v-list-item-content>
-          <v-list-item-title>菜单2</v-list-item-title>
-        </v-list-item-content>
+      <v-list-item to="/button">
+        <v-list-item-title>按钮</v-list-item-title>
       </v-list-item>
-      <v-list-item>
-        <v-list-item-content>
-          <v-list-item-title>菜单3</v-list-item-title>
-        </v-list-item-content>
+      <v-list-item to="/input">
+        <v-list-item-title>输入框</v-list-item-title>
       </v-list-item>
     </v-list-group>
 
@@ -36,9 +27,8 @@
         <v-list-item-icon>
           <v-icon>mdi-home</v-icon>
         </v-list-item-icon>
-        <v-list-item-content>
-          <v-list-item-title>菜单4</v-list-item-title>
-        </v-list-item-content>
+
+        <v-list-item-title>菜单4</v-list-item-title>
       </v-list-item>
     </v-list-item-group>
   </v-list>
@@ -49,9 +39,7 @@ export default {
   components: {},
   props: {},
   data() {
-    return {
-      selectedItem: "",
-    };
+    return {};
   },
   computed: {},
   watch: {},

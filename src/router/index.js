@@ -25,11 +25,19 @@ const routes = [
         },
       },
       {
-        path: "/about",
-        name: "About",
-        component: () => import(/* webpackChunkName: "about" */ "@/pages/About.vue"),
+        path: "/button",
+        name: "Button",
+        component: () => import(/* webpackChunkName: "button" */ "@/pages/Button.vue"),
         meta: {
-          title: "haha",
+          title: "按钮",
+        },
+      },
+      {
+        path: "/input",
+        name: "Input",
+        component: () => import(/* webpackChunkName: "input" */ "@/pages/Input.vue"),
+        meta: {
+          title: "输入框",
         },
       },
     ],
