@@ -10,6 +10,8 @@ module.exports = {
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "linebreak-style": ["error", "windows"],
+    // 控制vue中属性的顺序
     "vue/order-in-components": [
       "error",
       {

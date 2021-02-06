@@ -10,5 +10,5 @@ module.exports = {
   jsxBracketSameLine: true, // 将>多行JSX元素的放在最后一行的末尾，而不是一个人放在下一行（不适用于自闭合元素）。
   arrowParens: "always", //箭头函数都加上空格
   vueIndentScriptAndStyle: false, // 是否缩进Vue文件中的脚本和样式标签
-  endOfLine: "lf", // 换行
+  endOfLine: "crlf", // 换行
 };
