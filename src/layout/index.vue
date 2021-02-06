@@ -3,8 +3,8 @@
     <v-navigation-drawer app v-model="drawer">
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title class="title">Application</v-list-item-title>
-          <v-list-item-subtitle>subtext</v-list-item-subtitle>
+          <v-list-item-title class="title">my-vuetify</v-list-item-title>
+          <v-list-item-subtitle>demo</v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
 
@@ -41,20 +41,11 @@ export default {
   data() {
     return {
       drawer: true, // 控制侧边栏状态
-      levelList: [],
     };
   },
-  watch: {
-    $route() {
-      this.getBreadcrumb();
-    },
-  },
-  created() {
-    this.getBreadcrumb();
-  },
-  methods: {
-    getBreadcrumb() {
-      this.levelList = this.$route.matched
+  computed: {
+    levelList() {
+      return this.$route.matched
         .filter((item) => item.meta && item.meta.title)
         .map((item) => {
           return {
@@ -63,6 +54,8 @@ export default {
         });
     },
   },
+  created() {},
+  methods: {},
 };
 </script>
 
